@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'newsfeeds/index'
 
   get 'pages/index'
+  get 'pages/newsfeed'
 
   resources :instruments
 

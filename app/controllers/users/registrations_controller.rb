@@ -51,7 +51,7 @@ before_action :configure_sign_up_params, only: [:create]
 
   # The path used after sign up.
   def after_sign_up_path_for(resource)
-    newsfeeds_index_path
+    pages_newsfeed_path
   end
 
   # The path used after sign up for inactive accounts.

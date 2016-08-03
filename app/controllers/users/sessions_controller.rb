@@ -17,7 +17,7 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   def after_sign_in_path_for(resource)
-    newsfeeds_index_path
+    pages_newsfeed_path
   end
 
   # protected
