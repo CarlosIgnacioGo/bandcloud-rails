@@ -6,4 +6,7 @@ class User < ActiveRecord::Base
 
   has_many :user_instrument
   has_many :instruments, through: :user_instrument
+
+  has_many :user_band
+  has_many :bands, through: :user_band
 end
