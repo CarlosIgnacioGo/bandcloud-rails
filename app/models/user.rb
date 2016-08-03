@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :user_instrument
-	has_many :instruments, through: :user_instrument
+  has_many :instruments, through: :user_instrument
 end

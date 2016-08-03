@@ -4,8 +4,13 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :artisticName, 'Nombre Artistico' %><br />
+    <%= f.text_field :artisticName, autofocus: true %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email%>
   </div>
 
   <div class="field">
@@ -20,7 +25,17 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
+  <div class="field">
+    <label>Instrumentos</label>
+    <ul>
+      <% @instrument.each do |instrument| %>
+        <li>
+          <%= f.check_box 'instrument_ids', {multiple: true}, instrument.id, [] %>
+          <span><%=instrument.name%></span>
+        </li>
+      <%end%>
+    </ul>
+  </div>
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
