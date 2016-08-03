@@ -4,7 +4,7 @@ before_action :configure_sign_up_params, only: [:create]
 
   # GET /resource/sign_up
   def new
-    @instrument = Instrument.all
+    @instruments = Instrument.all
     super
   end
 
@@ -41,7 +41,7 @@ before_action :configure_sign_up_params, only: [:create]
 
   # If you have extra params to permit, append them to the sanitizer.
   def configure_sign_up_params
-    devise_parameter_sanitizer.permit(:sign_up, keys: [:artisticName,instrument_ids: []])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:profilePhoto,:artisticName,instrument_ids: []])
   end
 
   # If you have extra params to permit, append them to the sanitizer.

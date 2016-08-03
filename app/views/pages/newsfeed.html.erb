@@ -1,1 +1,130 @@
 <h1>Newsfeed</h1>
+<section class="row">
+	<% @composition.each do |composition|%>
+	<section class="col-md-2">
+		<div class="thumbnail thumbnail-full">
+			<img src="http://placehold.it/150x200">
+			<div class="caption">
+				<h6><%= composition.name %></h6>
+				<h6><%= composition.user.artisticName %></h6>
+				<a href="#" class="btn btn-success btn-xs">#Trap</a>
+				<a href="#" class="btn btn-success btn-xs">#EDM</a>
+				<a href="#" class="btn btn-success btn-xs">#Salsa</a>
+			</div>
+		</div>
+	</section>
+	<%end%>
+</section>
+
+<section class="row"> 
+	<section class="col-md-6">
+		<section class="row">
+			<section class="col-md-3">
+				<div class="thumbnail thumbnail-full">
+					<img src="http://placehold.it/150x150">
+					<div class="caption">
+						<h6>Lorem ipsum</h6>
+						<h6>Nulla architecto</h6>
+						<a href="#" class="btn btn-success btn-xs">#Trap</a>
+						<a href="#" class="btn btn-success btn-xs">#EDM</a>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-3">
+				<div class="thumbnail thumbnail-full">
+					<img src="http://placehold.it/150x150">
+					<div class="caption">
+						<h6>Lorem ipsum</h6>
+						<h6>Nulla architecto</h6>
+						<a href="#" class="btn btn-success btn-xs">#Trap</a>
+						<a href="#" class="btn btn-success btn-xs">#EDM</a>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-3">
+				<div class="thumbnail thumbnail-full">
+					<img src="http://placehold.it/150x150">
+					<div class="caption">
+						<h6>Lorem ipsum</h6>
+						<h6>Nulla architecto</h6>
+						<a href="#" class="btn btn-success btn-xs">#Trap</a>
+						<a href="#" class="btn btn-success btn-xs">#EDM</a>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-3">
+				<div class="thumbnail thumbnail-full">
+					<img src="http://placehold.it/150x150">
+					<div class="caption">
+						<h6>Lorem ipsum</h6>
+						<h6>Nulla architecto</h6>
+						<a href="#" class="btn btn-success btn-xs">#Trap</a>
+						<a href="#" class="btn btn-success btn-xs">#EDM</a>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+
+	<section class="col-md-6">
+		<div class="chat-panel panel panel-default">
+				<ul class="chat list-group">
+					<li class="list-group-item">
+						<span class="pull-left">
+							<img src="http://placehold.it/50x50">
+						</span>
+						<div class="chat-body">
+							<div class="header">
+								<strong class="primary-font">Titulo de la canción</strong>
+							</div>
+							<p>La super banda</p>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<span class="pull-left">
+							<img src="http://placehold.it/50x50">
+						</span>
+						<div class="chat-body">
+							<div class="header">
+								<strong class="primary-font">Titulo de la canción</strong>
+							</div>
+							<p>La super banda</p>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<span class="pull-left">
+							<img src="http://placehold.it/50x50">
+						</span>
+						<div class="chat-body">
+							<div class="header">
+								<strong class="primary-font">Titulo de la canción</strong>
+							</div>
+							<p>La super banda</p>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<span class="pull-left">
+							<img src="http://placehold.it/50x50">
+						</span>
+						<div class="chat-body">
+							<div class="header">
+								<strong class="primary-font">Titulo de la canción</strong>
+							</div>
+							<p>La super banda</p>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<span class="pull-left">
+							<img src="http://placehold.it/50x50">
+						</span>
+						<div class="chat-body">
+							<div class="header">
+								<strong class="primary-font">Titulo de la canción</strong>
+							</div>
+							<p>La super banda</p>
+						</div>
+					</li>
+				</ul>
+		</div>
+	</section>
+</section>

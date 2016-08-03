@@ -29,6 +29,13 @@
 		height: 100%;
 	}
 
-.song{
-	height: 200px;
+.chat{
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
+
+.chat-body{
+	margin-left: 60px;
+}
+

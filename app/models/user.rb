@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
 
   has_many :user_band
   has_many :bands, through: :user_band
+
+  mount_uploader :profilePhoto, ProfilePhotoUploader 
 end

@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   end
 
   def newsfeed
+  	@composition = Composition.all
   end
 end
